@@ -15,13 +15,15 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 [Done]User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
 [Done]User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
 [Done]User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
-[]User Story #6: I can watch an embedded product video with id="video".
+[Done]User Story #6: I can watch an embedded product video with id="video".
 [Done]User Story #7: My landing page has a form element with a corresponding id="form".
 [Done]User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
 [Done]User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
-[]User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+[Done]User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
 [Done]User Story #11: Within the form, there is a submit input with a corresponding id="submit".
-User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
+[Done]User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
+**Content user stories above[Done] 
+**Still need to add content
 User Story #13: The navbar should always be at the top of the viewport.
 User Story #14: My product landing page should have at least one media query.
 User Story #15: My product landing page should utilize CSS flexbox at least once.
@@ -48,16 +50,18 @@ Remember to use the Read-Search-Ask method if you get stuck.-->
 
 
 
-        <section id="video">
+        <section >
             <h4>Section Heading</h4>
             <p>Video description</p>
-            <video src="" controls="true"></video>
+            <video id="video" src="assets\images_videos\ganges-drums-smaller.mp4" controls="true"></video>
         </section>
 
         <section id="mailing-list-form">
             <h4>Form description</h4>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input id="email" name="email-address" type="email" placeholder="YourEmail@email.com" required="true">
+                <label for="email">Sign up for our Email Updates and Save Hundreds!</label>
+                <input id="email" name="email" type="email" placeholder="YourEmail@email.com" required="true">
+                <label for="submit">Enter a valid email address and submit.</label>
                 <input type="submit" id="submit">
             </form>
         </section>
